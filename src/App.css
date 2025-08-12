@@ -55,3 +55,20 @@ body {
 .toggle {
   margin: 20px 0;
 }
+
+/* Flash animation */
+@keyframes flashEffect {
+  0% {
+    background-color: yellow;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: transparent;
+    transform: scale(1);
+  }
+}
+
+.flash {
+  animation: flashEffect 0.5s ease;
+  border-radius: 5px;
+}
